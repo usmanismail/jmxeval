@@ -2,7 +2,7 @@
 
 *jmxeval* is a plugin for Nagios/NRPE which can query JMX attributes or return values of JMX operations
 
-= Setting up =
+= Setting Up =
 
 == For use with Nagios/NRPE ==
 
