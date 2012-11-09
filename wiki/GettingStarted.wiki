@@ -1,12 +1,61 @@
-# Getting started with jmxeval
-
 = Introduction =
 
 *jmxeval* is a plugin for Nagios/NRPE which can query JMX attributes or return values of JMX operations
 
-= Details =
+= Setting up =
 
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+== For use with Nagios/NRPE ==
+
+To setup *jmxeval* with your Nagios/NRPE setup,
+  # Download the latest version's zip file
+  # Unpack the zip file
+  # Place the following files from the zip file to `libexec` directory under Nagios directory, or any other location you prefer to place Nagios plugins
+   * `jmxeval-<version>.jar`
+   * `check_jmxeval` (for linux or any unix based platforms)
+   * `check_jmxeval.bat` (for windows)
+  # Ensure `JAVA_HOME` environment property is set to a valid Java installation, or change the `check_jmxeval` / `check_jmxeval.bat` to set the `JAVA_HOME` value (refer RunningWithoutSettingEnvironmentVariables)
+  # Run the following command to make sure setup is complete
+
+*On Linux (or other unix based platforms)*
+{{{
+<nagios-dir>/libexec/check_jmxeval
+}}}
+
+*On Windows*
+{{{
+<nagios-dir>/libexec/check_jmxeval.bat
+}}}
+
+This should print the following on the screen.
+
+{{{
+Syntax: check_jmxeval <filename> [--validate=true [--schema=x.x]]
+}}}
+
+== For use as a standalone tool ==
+
+To setup *jmxeval* with your Nagios/NRPE setup,
+  # Download the latest version's zip file
+  # Unpack the zip file
+  # Ensure `JAVA_HOME` environment property is set to a valid Java installation, or change the `check_jmxeval` / `check_jmxeval.bat` to set the `JAVA_HOME` value (refer RunningWithoutSettingEnvironmentVariables)
+  # Run the following command to make sure setup is complete
+
+*On Linux (or other unix based platforms)*
+{{{
+<nagios-dir>/libexec/check_jmxeval
+}}}
+
+*On Windows*
+{{{
+<nagios-dir>/libexec/check_jmxeval.bat
+}}}
+
+This should print the following on the screen.
+
+{{{
+Syntax: check_jmxeval <filename> [--validate=true [--schema=x.x]]
+}}}
+
+= Your first jmxeval check configuration =
+
+To be completed.
