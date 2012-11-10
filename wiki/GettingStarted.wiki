@@ -1,7 +1,7 @@
 #labels Featured
 = Table of Contents =
 
-<wiki:toc max_depth="2" />
+<wiki:toc max_depth="3" />
 
 = Introduction =
 
@@ -266,9 +266,11 @@ The XML configuration file is structured to give maximum possible configurabilit
 </jmxeval:jmxeval>
 }}}
 
+== Configuration elements ==
+
 Let us look at each element and what attributes you can configure to implement your *jmxeval* check.
 
-== `<connection>` element ==
+=== `<connection>` element ===
 
 The `<connection>` element will initiate a JMX connection for querying for MBean attributes of executing JMX operations configured within the `<connection>` element. It supports JMX authentication using username and password, as secured JMX connections over SSL.
 
@@ -302,21 +304,21 @@ Here's a few example connection elements.
 <connection url="service:jmx:rmi://webserver1.adahas.com:9010/jndi/rmi://webserver1.adahas.com:1099/jmxrmi">
 }}}
 
-== `<eval>` element ==
+=== `<eval>` element ===
 
-== `<query>` element ==
+=== `<query>` element ===
 
-== `<exec>` element ==
+=== `<exec>` element ===
 
-== `<expr>` element ==
+=== `<expr>` element ===
 
-== `<check>` element ==
+=== `<check>` element ===
 
-== `<perf>` element ==
+=== `<perf>` element ===
 
-= Validating your configuration file =
+== Validating your configuration file ==
 
-= Setting variables via command line that are usable within the configuration file =
+== Setting variables via command line to be used in the configuration file ==
 
 = Troubleshooting =
 
