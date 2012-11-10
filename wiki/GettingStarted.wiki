@@ -1,3 +1,4 @@
+#labels Featured
 = Table of Contents =
 
 <wiki:toc max_depth="2" />
@@ -144,7 +145,7 @@ And it was successful, it should give a output similar to,
 JMXEval Threads OK - ThreadCount is 23 | threadCount=23;30;40 time=0.0s
 }}}
 
-= Configuration Explained =
+= Configuration explained =
 
 The *jmxeval* configuration is supplied as an XML file, which let you configure a simple JMX attribute check to a more advanced checks using multiple JMX attributes/return values from JMX operations, regular expression based status checks and mathematical computations.
 
@@ -300,3 +301,31 @@ Here's a few example connection elements.
 {{{
 <connection url="service:jmx:rmi://webserver1.adahas.com:9010/jndi/rmi://webserver1.adahas.com:1099/jmxrmi">
 }}}
+
+== `<eval>` element ==
+
+== `<query>` element ==
+
+== `<exec>` element ==
+
+== `<expr>` element ==
+
+== `<check>` element ==
+
+== `<perf>` element ==
+
+= Validating your configuration file =
+
+= Setting variables via command line that are usable within the configuration file =
+
+= Troubleshooting =
+
+= Examples =
+
+== Multiple simple attribute checks (Thread count check) ==
+
+== Using composite attributes and mathematical expressions (Heap memory usage check) ==
+
+== Regular expression based check (Tomcat version check) ==
+
+== JGroups cluster visible member count ==
