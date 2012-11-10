@@ -329,5 +329,3 @@ Here's a few example connection elements.
 == Using composite attributes and mathematical expressions (Heap memory usage check) ==
 
 == Regular expression based check (Tomcat version check) ==
-
-== JGroups cluster visible member count ==
