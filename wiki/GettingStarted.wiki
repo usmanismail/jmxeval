@@ -306,9 +306,9 @@ Here's a few example connection elements.
 
 === `<eval>` element ===
 
-The <eval> element represents a single check. A check could comprise of `<query>`ing one or more JMX attributes, `<exec>`uting one or more JMX operations, performing mathematical `<expr>`ressions on the acquired values, and checking the values to be in defined warning and critical levels.
+The `<eval>` element represents a single check. A check could comprise of `<query>`ing one or more JMX attributes, `<exec>`uting one or more JMX operations, performing mathematical `<expr>`ressions on the acquired values, and checking the values to be in defined warning and critical levels.
 
-Configuration attributes available on <eval> element.
+Configuration attributes available on `<eval>` element.
   * `name` - Name of the check, which will be displayed in the plugin output. This is a mandatory attribute.
   * `host` - Regular expression to perfrom on the hostname of the host before executing the check. If the pattern does not match, the check will not be executed. This would be useful if you are using a common XML file to perform multiple checks, where some of them are not applicable for some hosts/
 
@@ -321,7 +321,7 @@ Configuration attributes available on <eval> element.
 
 * A check named 'CacheSize' which should only be performed on hosts where the host name begins with 'cache'
 {{{
-<eval name="HeapMemory" host="^cache.*">
+<eval name="CacheSize" host="^cache.*">
    ...
 </eval>
 }}}
