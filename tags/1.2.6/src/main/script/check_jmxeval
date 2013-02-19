@@ -1,0 +1,16 @@
+#!/bin/sh
+#
+# JMXEval execution script
+#
+# Syntax: check_jmxeval <config-xml-file> [<options>]
+#
+# If JAVA_HOME environment variable is not set, uncomment the following
+# line and set the value as the path to root of the Java directory 
+#
+# JAVA_HOME=/path/to/jdk-1.5.0
+#
+# Executes JMXEval
+#
+BASE_DIR=`dirname $0`
+LIB_DIR="$BASE_DIR/lib"
+$JAVA_HOME/bin/java -classpath "$BASE_DIR/jmxeval-1.2.6.jar:$LIB_DIR/args4j-2.0.16.jar" com.adahas.tools.jmxeval.App $@
